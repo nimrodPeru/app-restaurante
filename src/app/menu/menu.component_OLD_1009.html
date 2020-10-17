@@ -8,5 +8,7 @@
 
 
 <li *ngFor="let dish of dishes"><!--{{dish.name}}-->
- </li>
+    <app-dish [dish]="dish"></app-dish>
+    <p *ngFor="let ingredient of dish.ingredients">{{ingredient.name}}{{ingredient.cantidad}}</p>
+</li>
 
